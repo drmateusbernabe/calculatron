@@ -1,0 +1,198 @@
+/* Cores */
+  body {
+    background-image: url('image/bg_image.jpg'); /* Insira o caminho da sua imagem */
+    background-repeat: repeat; /* Opcional: define como a imagem se repete */
+    background-attachment: fixed; /* Opcional: define se a imagem rola com a página */
+    background-position: center; /* Opcional: define a posição da imagem */
+    background-size: cover; /* Opcional: define o tamanho da imagem */
+    color: #fff; /* Branco */
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo do texto */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Tabelas */
+  table {
+    margin: 0 auto; /* Centraliza a tabela na horizontal */
+    border-collapse: collapse; /* Remove bordas entre células */
+    width: 80%; /* Define a largura da tabela (pode ajustar) */
+    background-color: rgba(255, 255, 255, 0); /* Preto com 50% de transparência */
+    
+    
+  }
+  
+  th, td {
+    border-radius:  10px; /* Arredonda os cantos das células e do cabeçalho */
+    padding: 8px; /* Padding around cell content */
+    margin: 0 auto; /* Centraliza a tabela na horizontal */
+    background-color: rgba(0, 0, 0, 0.9); /* Preto com 50% de transparência */
+    padding: 0.5em; /* Aumenta o espaçamento interno das células */
+    box-shadow: 0px 0px 0px 1px rgb(255, 254, 254); /* Offset: 5px in both directions, Blur: 5px, Spread: 0, Color: semi-transparent black */
+  }
+
+  td.align-right {
+    text-align: right; /* Right-align the content within the cell */
+    max-width: 200px; /* Set the maximum width of the cell to 20px */
+  }
+
+  td.align-left {
+    text-align: left; /* Right-align the content within the cell */
+    max-width: 200px; /* Set the maximum width of the cell to 20px */
+  }
+  
+  h1 { /* Seleciona todos os elementos h1 */
+    font-size: 20px; /* Tamanho da fonte para h1: 20px */
+    font-family: Arial; /* Define a fonte para Arial ou outra fonte sans-serif */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  h2 { /* Seleciona todos os elementos h2 */
+    font-size: 18px; /* Tamanho da fonte para h2: 18px */
+    font-family: Arial; /* Define a fonte para Arial ou outra fonte sans-serif */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  h3 { /* Seleciona todos os elementos h3 */
+    font-size: 16px; /* Tamanho da fonte para h3: 12px */
+    font-family: Arial; /* Define a fonte para Arial ou outra fonte sans-serif */
+    text-align: center; /* Justifica o texto */
+  }
+  
+  p {
+    font-family: Arial; /* Define a fonte para Arial ou outra fonte sans-serif */
+    font-size: 14px; /* Tamanho da fonte: 10px */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px; /* Espaço entre parágrafos */
+    margin-left: 20px; /* Espaço entre parágrafos */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas no parágrafo */
+    text-indent: 2em; /* Define o espaçamento da primeira frase */
+  }
+
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff00; /* Or your desired background color */
+    z-index: 100; /* Ensure the menu stays on top */
+    transition: top 0.5s ease-in-out; /* Smooth transition effect */
+  }
+  
+  main {
+    position: static; /* Default position */
+    padding-top: 180px; /* Adjust as needed based on header height */
+    padding-bottom: 100px; /* Adjust as needed based on footer height */
+    width: 95%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the main content */
+  }  
+   
+  footer {
+    position:inherit;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff00; 
+    z-index: 300;
+    transition: bottom 0.5s ease-in-out;
+  }
+
+.btn{
+  color:rgb(253, 251, 251);
+  transition: all 0.5s;
+  text-decoration: none;
+
+}
+
+.btn:hover{
+  color:black;
+  padding: 15px 55px;
+  background:rgba(255, 251, 251, 0.767);
+  opacity: 90%;
+  border-radius: 10%;
+}
+
+  
+.btn2{
+  color:rgb(5, 5, 5);
+  transition: all 0.5s;
+
+}
+
+.btn2:hover{
+  color:black;
+  padding: 15px 55px;
+  background:rgba(255, 251, 251, 0.767);
+  opacity: 90%;
+  border-radius: 10%;
+}
+
+.btn3{
+  color:rgb(5, 5, 5);
+  transition: all 0.5s;
+
+}
+
+.btn3:hover{
+  color:rgb(223, 221, 221);
+  padding: 5px 5px;
+  background:rgb(255, 255, 255);
+  border-radius: 100%;
+  opacity: 10%;
+  }
+  
+.btn4{
+  color:rgb(253, 251, 251);
+  transition: all 0.5s;
+  text-decoration: none;
+
+}
+
+.btn4:hover{
+  color:black;
+  background:rgba(255, 251, 251, 0.767);
+  opacity: 90%;
+}
+
+.btn5{
+  color:rgb(104, 103, 49);;
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
+.btn5:hover{
+  color:black;
+  background:rgba(255, 251, 251, 0.767);
+  text-decoration: underline ;
+}
+
+.btn5:visited {
+  color:rgb(120, 38, 250);
+  background:rgba(255, 251, 251, 0.767);
+  text-decoration: underline;
+}
+
+
+  /* Estilos responsivos para telas menores */
+  @media (max-width: 768px) {
+    table {
+      width: 80%; /* Aumenta a largura da tabela para telas menores */
+    }
+  }
+  @media (max-width: 486px) {
+    table {
+      width: 70%; /* Aumenta a largura da tabela para telas menores */
+    }
+  }
+
+  @media (max-width: 1024PX) {
+    table {
+      width: 90%; /* Aumenta a largura da tabela para telas menores */
+    }
+  }
+
+  @media (max-width: 2048PX) {
+    table {
+      width: 90%; /* Aumenta a largura da tabela para telas menores */
+    }
+  }

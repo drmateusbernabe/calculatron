@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equipv="X-UA-Compatible" contente="IE-edge">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>mateus_bernabe</title>
+        <link rel="stylesheet" type"text/css" href="{{url_for('static', filename='style.css')}}" media="screen"/>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    </head>
+
+    <body>
+       
+        <header>
+
+        <table width="50%">
+        
+
+            <tr>
+                <th>
+                    <h1><a href="{{ url_for('index') }}" class="btn4">Site desenvolvido para a disciplina de Atividade Extensionista I<br>                   
+                    Bacharelado em Engenharia de Sotware:</a>
+                    </h1>
+                </th>
+            </tr>
+        </table> 
+
+       
+        
+        <table width="50%">
+        
+
+            <tr>
+                <th><h1><a href="{{ url_for('index') }}" class="btn">Página Inicial</a></th></h1>
+
+                
+                <th><h1><a href="{{ url_for('sobre') }}" class="btn">Sobre Mim</a></th></h1>
+                    
+                                 
+                <th><h1><a href="{{ url_for('curriculum') }}" class="btn">Curriculum</a></th></h1>
+                    
+                
+        
+                <th><h1><a href="{{ url_for('contato') }}" class="btn">Contato</a></th></h1>
+                    
+                
+        
+                <th><h1><a href="{{ url_for('portifolio') }}" class="btn">Portifólio</a></th></h1>
+                    
+                
+        
+                <th><h1><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1196493Z5&tokenCaptchar=03AFcWeA7KGcpajrssv0fbzMcSQAxPbi1kIBrdiVdjHlBB5N6BVp_ArWwuHCWYNM5DTLOkq228FYJtpETMqJ1WEg7Y8DzDDB7NDSqp4plhaCGK1Qf_sKijpxOPLN6UGdz0zxWhc0Jn5i-eYlQ-3oiCmuCOxddFsanqd0w0ecXKNFeSaASLEiaKUuihdnuH2Vh9SUYeEZug85KNkGq_BwkBC8229x85AXtxAhjEQNIDMKkAB2fyRt59BIpI2SELtUuMXhptXrN0fXUn41arB3AZK82Q-jufR0s5ijV7eyeF2b3WHTHiBpxT6FHHclA7FV9ArSk2lncQlztaDyTaIXgWgFPHYx0zUVITbUeb-xup1vxdrA40r1XHYEe4Adxk_xEy7XOAA7fNYY0tVRny-CpUKSaQ_BZeP4k96Ay50u7D-Yu56sjhk4LtXvDgf732zGQc5VtEXePnSpzRmJWkhB1H7ThR4-FgRu5gvOOEXPeP1K3k6J137wmmugdSMXurEdXRN-RQNjMmDFE-iDaKK-OMxQ4x9yORMkWz7eprieEcPygHPWJc2QH3i-J3D3hZDaA91SIijqFeHClWBbUUfIO1tGUX3-x7-uvptgA0icuAwTvmjUMOu7KXZHF19qSJla1khT_oQftvJRHGdC_Y3fXnEz6l2oBdOwCTXCq8tiEcriR7TvquOICeE-AN2U4XbCkvkVzokvrvGIYKESEZ9GYuP8KnoByY7d5of4fG3NgPuFU_tj7IjVsaNHc" class="btn">Lattes</a></th>
+                </h1>
+                     
+            </tr>
+
+            <table>
+
+                <tr>
+                    <th><h1><a href="{{ url_for('calculatron') }}" class="btn">Download</a></th></h1>
+                </tr>
+    
+            </table>  
+                   
+        </table>  
+
+         
+        </header>  
+            
+        
+        
+
+        <main>
+
+
+
+            <table>
+               
+                <br> <br> <br> <br> <br> <br>
+                <th><h1>Calculatron:</h1></th>
+    
+            </table>
+    
+            <table>
+
+                <tr><th><p>Para finalizar, digite FIM:</p></th></tr>
+               
+                <th> <br> <br> <br> <br> <br> <br>
+                    <script type="module">
+                        const loading = document.getElementById('loading');
+                        addEventListener('py:ready', () => loading.close());
+                        loading.showModal();
+                    </script>
+            
+                    <title>PyScript Hello World</title>
+                  
+                </head>
+            
+                <body>
+                    <dialog id="loading">
+                        <h1>Loading...</h1>
+                    </dialog>
+            
+                                
+                 
+
+                    <section class="pyscript">
+
+                       
+                        Calculatron: <br />
+                        This is the current date and time, as computed by Python:
+                        <script type="py">
+                            
+                            print ("Data e hora de Download")
+
+                            from pyscript import display
+                            from datetime import datetime
+                            now = datetime.now()
+                            display(now.strftime("%m/%d/%Y, %H:%M:%S"))
+                            
+                        </script>
+
+                        
+                       
+                        <br> <br> <br> <br> <br> <br>
+                </th>
+
+
+
+                  
+            </table>  
+
+
+                
+            </main> 
+            
+
+
+            <footer>
+               
+                
+                <table width="50%">
+                    
+                    <tr>
+                        
+                        <td class="align-left"><a href="{{ url_for('index') }}" class="btn3"><img src="{{url_for('static', filename='home.png')}}" alt="up.png" title="home.png" width="10%"></a></td>
+                        
+                        <th>
+                            <br> 
+
+                            <a href="{{ url_for('index') }}" class="btn">Home</a>
+                            
+                            <br> <br></th>
+                        
+                        <td class="align-right"><a href="{{ url_for('index') }}" class="btn3"><img src="{{url_for('static', filename='home.png')}}" alt="up.png" title="home.png" width="10%"></a></td>
+                           
+                    </tr>
+                    
+                </table>
+        
+
+                   
+                <table>
+
+                
+                    <tr>
+                        
+                        <th><h3><a href="https://www.linkedin.com/in/mateus-bernab%C3%A9-19084031/" class="btn4"> Mateus Henrique Bernabé</a>
+                        </h3></th>
+                        <th><h3><a href="https://www.linkedin.com/in/mateus-bernab%C3%A9-19084031/" class="btn4">4631948</a>
+                        </h3></th>
+                        <th><h3><a href="https://www.linkedin.com/in/mateus-bernab%C3%A9-19084031/" class="btn3"><img src="{{url_for('static', filename='mateus_bernabe_curriculum.jpg')}}" alt="Mateus Henrique Bernabé" title="Foto: Autor" width="20%"></a> 
+                        </h3></th>
+                        <th><h3><a href="https://www.uninter.com/" class="btn3"><img src="{{url_for('static', filename='logo-uninter.png')}}" alt="logo-uninter" title="logo-uninter" width="20%"></a>
+                        </h3></th>
+               
+                    </tr>
+        
+                
+        
+                    </table>
+        
+                    <table width="50%">
+                        <tr>
+                            <th>
+                            <h3><a href="{{ url_for('index') }}" class="btn4">Criado e desenvolvido por:<br>
+                                        Mateus Henrique Bernabé&copy;, Analista de Sistemas.</a>
+                            </h3>
+                            </th>
+                        </tr>
+                    </table> 
+           
+            </footer>
+
+    
+    </body>
+</html>
